@@ -54,7 +54,7 @@ section {
 }
 
 h2 {
-  color: #ffd700;
+  color: #d2b48c; /* braon akcenat za sekcije */
   text-align: center;
   margin-bottom: 20px;
 }
@@ -73,30 +73,78 @@ h2 {
   border-radius: 5px;
 }
 
-.gallery-container {
+/* Galerija / Slider */
+.slajder {
+  position: relative;
+  max-width: 800px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slides-container img {
+  width: 100%;
+  display: none;
+  border-radius: 10px;
+}
+
+.slides-container img.active {
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+
+.slajder button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(210, 180, 140, 0.7); /* braon akcenat */
+  border: none;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.slajder .prev {
+  left: 10px;
+}
+
+.slajder .next {
+  right: 10px;
+}
+
+.gallery-container, .galerija {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
 }
-.gallery-container img {
+.gallery-container img, .galerija img {
   width: 280px;
   height: 180px;
   border-radius: 10px;
   object-fit: cover;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.gallery-container img:hover, .galerija img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(210,180,140,0.6);
 }
 
+/* Video sekcija */
 .video {
   text-align: center;
   margin-top: 30px;
 }
-.video iframe {
+.video video {
   width: 100%;
-  max-width: 560px;
-  height: 315px;
+  max-width: 640px;
+  height: 360px;
   border-radius: 10px;
 }
 
+/* Forme */
 form {
   display: flex;
   flex-direction: column;
@@ -120,18 +168,33 @@ button:hover {
   background-color: #e5c100;
 }
 
-.review {
+/* Recenzije */
+.review, .recenzija {
   background: #222;
   padding: 20px;
   border-radius: 10px;
   margin: 15px 0;
+  transition: transform 0.3s;
 }
-.review span {
+.review:hover, .recenzija:hover {
+  transform: scale(1.02);
+}
+.review span, .recenzija strong {
   display: block;
   color: #ccc;
   margin-top: 10px;
 }
 
+/* Kontakt */
+#contact a {
+  color: #d2b48c;
+  text-decoration: none;
+}
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
 footer {
   text-align: center;
   background: #000;

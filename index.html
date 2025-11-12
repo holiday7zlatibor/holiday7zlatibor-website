@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Holiday7zlatibor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -43,26 +44,31 @@
     </ul>
   </section>
 
-  <!-- Galerija -->
+  <!-- Galerija sa sliderom -->
   <section id="gallery">
     <h2>Galerija</h2>
-    <div class="galerija">
-  <img src="slike/dnevna.jpg" alt="Dnevna soba apartmana">
-  <img src="slike/kupatilo.jpg" alt="Kupatilo">
-  <img src="slike/lepasslika.jpg" alt="Prizor">
-  <img src="slike/spavaca.jpg" alt="Spavaca soba">
-  <img src="slike/spavacaa.jpg" alt="Spavaca soba2">
-  <img src="slike/terasa.jpg" alt="Pogled sa terase">
-  <img src="slike/zgrada.jpg" alt="Zgrada">
-  <img src="slike/ulaz.jpg" alt="Logo apartmana">
-  <img src="slike/zima.jpg" alt="Zgrada zimi">
-</div>
+    <div class="slajder">
+      <button class="prev">&#10094;</button>
+      <div class="slides-container">
+        <img src="slike/dnevna.jpg" class="slide active" alt="Dnevna soba apartmana">
+        <img src="slike/kupatilo.jpg" class="slide" alt="Kupatilo">
+        <img src="slike/lepasslika.jpg" class="slide" alt="Prizor">
+        <img src="slike/spavaca.jpg" class="slide" alt="Spavaća soba">
+        <img src="slike/spavacaa.jpg" class="slide" alt="Spavaća soba 2">
+        <img src="slike/terasa.jpg" class="slide" alt="Pogled sa terase">
+        <img src="slike/zgrada.jpg" class="slide" alt="Zgrada">
+        <img src="slike/ulaz.jpg" class="slide" alt="Ulaz">
+        <img src="slike/zima.jpg" class="slide" alt="Zgrada zimi">
+      </div>
+      <button class="next">&#10095;</button>
+    </div>
 
     <!-- Video sekcija -->
     <div class="video">
-     <video width="640" height="360" controls>
-  <source src="slike/welnes.mp4" type="video/mp4">
-</video>
+      <video width="640" height="360" controls>
+        <source src="slike/welnes.mp4" type="video/mp4">
+        Tvoj pregledač ne podržava video.
+      </video>
     </div>
   </section>
 
@@ -100,23 +106,23 @@
 
   <!-- Kontakt -->
   <section id="contact">
-  <h2>Kontakt</h2>
+    <h2>Kontakt</h2>
+    <p>📞 Telefon: <strong>065 976 1616</strong></p>
+    <p>📧 Email: <strong>holiday7zlatibor@gmail.com</strong></p>
+    <p>📍 Adresa: <strong>Vlastimira Pavlovića bb</strong></p>
+    <p>📸 Instagram: <strong><a href="https://www.instagram.com/holiday7zlatibor" target="_blank">@holiday7zlatibor</a></strong></p>
+    <p>🎵 TikTok: <strong><a href="https://www.tiktok.com/@holiday.7.zlatibor" target="_blank">@holiday.7.zlatibor</a></strong></p>
 
-  <p>📞 Telefon: <strong>065 976 1616</strong></p>
-  <p>📧 Email: <strong>holiday7zlatibor@gmail.com</strong></p>
-  <p>📍 Adresa: <strong>Vlastimira Pavlovića bb</strong></p>
-  <p>📸 Instagram: <strong><a href="https://www.instagram.com/holiday7zlatibor" target="_blank">@holiday7zlatibor</a></strong></p>
-  <p>🎵 TikTok: <strong><a href="https://www.tiktok.com/@holiday.7.zlatibor" target="_blank">@holiday.7.zlatibor</a></strong></p>
+    <iframe
+      src="https://www.google.com/maps?q=Zlatibor,Vlastimira%20Pavlovica%20bb&output=embed"
+      width="100%"
+      height="300"
+      style="border:0"
+      allowfullscreen=""
+      loading="lazy"
+    ></iframe>
+  </section>
 
-  <iframe
-    src="https://www.google.com/maps?q=Zlatibor,Vlastimira%20Pavlovica%20bb&output=embed"
-    width="100%"
-    height="300"
-    style="border:0"
-    allowfullscreen=""
-    loading="lazy"
-  ></iframe>
-</section>
   <footer>
     <p>© 2025 Holiday7zlatibor | Sva prava zadržana</p>
   </footer>
